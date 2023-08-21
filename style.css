@@ -1,0 +1,294 @@
+*{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Genos', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-image: url('./img/images.jpeg');
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px; 
+    border: solid 2px #c5e7ed;
+    border-radius:10px;
+    width: 270px;
+    height: 300px;
+    background-color:#044068;
+}
+#div__cadastro{
+    margin-top: 80px; 
+    width: 270px;
+    height: 400px;
+}
+#div__cadastro__input{
+    display:flex;
+    flex-direction: column;
+}
+.img{
+    width:90px;
+    height:90px;
+    border:solid 2px;
+    border-radius:50%;
+    position:absolute;
+    margin-bottom:340px;
+    background-color:#183da5;
+}
+#img__cadastro{
+    margin-bottom:450px;
+}
+#img__senha{
+    color:#f1f1f1;
+    padding:10px;
+    border-radius:50%;
+    background-color:#183da5;
+    border:solid 2px #000000;
+    width:60px;
+    height:60px;
+}
+#titulo__senha{
+    font-size:22px;
+    color:#f1f1f1;
+    margin-bottom:15px;
+}
+#paragrafo__senha{
+    color:#f1f1f1;
+    font-size:16px;
+    text-align:center;
+}
+.input{
+    width: 230px;
+    height:30px;
+    font-size: 20px;
+    margin-top:10px;
+    text-align:center;
+    border-radius: 8px;
+    border: none;
+    background-color:#87befe;
+    cursor: pointer;
+    color:#000000;
+}
+.input::placeholder{
+    color: #000000;
+}
+#link__login{
+    margin-top:30px;
+    margin-left:90px;
+    cursor: pointer;
+    color: #f1f1f1;
+    text-decoration:none;
+}
+.btn{
+    width: 230px;
+    height:30px;
+    margin-top: 20px;
+    font-size:20px;
+    font-weight: 600;
+    border: none;
+    background-color: #183da5;
+    color: #f1f1f1;
+    border-radius:8px;
+    cursor: pointer;
+}
+hr{
+    width: 150px;
+    margin-bottom:5px;
+}
+#btn__consultas{
+    margin-top:5px;
+}
+#agendamentos{
+    display:none;
+    width: 300px;
+    height: 500px;
+    background-color:#044068;
+    position:absolute;
+    margin-top:20px;
+    border-radius:15px;
+}
+#btn__fechar{
+    margin-left:250px;
+    margin-top:15px;
+    color:#f1f1f1;
+}
+#resultado{
+    background: #87befe;
+    width: 270px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top:15px;
+    border-radius: 10px;
+    height: 400px;
+    overflow-y:auto;
+}
+#div__paciente{
+  margin-top: 20px;
+}
+.dado{
+    text-decoration: none;
+    color:#000000;
+    font-size:20px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Genos', sans-serif;
+    font-weight: 500;
+}
+#btn__editar,#btn__deletar{
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+}
+.p__btn{
+    margin-top:5px;
+}
+#separador{
+    width: 240px;
+}
+
+.concluido{
+    display: none;
+    width: 200px;
+    height:22px;
+    background-color:#35ba0c;
+    margin-top:15px;
+    border-radius:20px;
+    animation: mover 1s alternate;
+}
+@keyframes mover{
+    from{
+        transform:translatex(295px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+.concluido__icon{
+    margin-left:15px;
+}
+.concluido__frase{
+    margin-top:2px;
+    margin-left:15px;
+    font-size:18px;
+    font-weight: bold;
+}
+
+
+@media (min-width:500px){
+    .div{
+        margin-top:100px;
+        width: 320px;
+        height: 370px;
+    }
+}
+@media (min-width:750px){
+    .div{
+        width: 370px;
+        height: 400px;
+    }
+    .img{
+        width:110px;
+        height:110px;
+        margin-bottom:420px;
+    }
+    .input{
+        width: 270px;
+        height:40px;
+        font-size: 20px;
+        margin-top:20px;
+    }
+    #link__login{
+        margin-left:150px;
+    }
+    .btn{
+        width: 270px;
+        height:40px;
+        margin-top: 50px;
+    }
+    #div__cadastro{
+    margin-top: 100px; 
+    width: 370px;
+    height: 440px;
+}
+.input__cadastro{
+    width: 270px;
+    height:32px;
+    font-size: 20px;
+    margin-top:10px;
+}
+#div__cadastro__input{
+    display:flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+#btn__cadastrar{
+    margin-top:10px;
+}
+#img__cadastro{
+    width: 90px;
+    height: 90px;
+}
+#agendamentos{
+    width: 600px;
+    height: 500px;
+}
+#btn__fechar{
+    margin-left:550px;
+    cursor:pointer;
+}
+#resultado{
+    width: 550px;
+    height: 400px;
+    margin-left: 25px;
+}
+}
+@media (min-width:1440px){
+    .div{
+        width: 500px;
+    }
+    .img{
+        width:130px;
+        height:130px;
+    }
+    .input{
+        width: 320px;
+        font-size: 23px;
+    }
+    #link__login{
+        margin-left:170px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .btn{
+        width: 320px;
+        font-size: 23px;
+    }
+    #titulo__senha{
+        font-size:30px;
+        margin-bottom:30px;
+    }
+    #paragrafo__senha{
+        font-size:20px;
+        text-align:center;
+    }
+    #div__cadastro{
+        width: 500px;
+        height: 450px;
+    }
+    #img__cadastro{
+        width: 110px;
+        height: 110px;
+        margin-bottom: 480px;
+    }
+    .input__cadastro{
+        width: 360px;
+        font-size: 23px;
+        height: 35px;
+    }
+    #btn__cadastrar,#btn__consultas{
+        width: 360px;
+    }
+}
+

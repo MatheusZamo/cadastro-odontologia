@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Genos:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div" id="div__cadastro">
+        <img class="img"id='img__cadastro' src="./img/images (5).jpeg" alt="icone do dentista">
+        <div id="div__cadastro__input">
+            <input class="input input__cadastro" id="nome" type="text" 
+            placeholder='Nome' maxlength="18" minlength="4" required autocomplete="none">
+            <input class="input input__cadastro"id="telefone" type="number" placeholder='Telefone' required autocomplete="none">
+            <input class="input input__cadastro" id="endereco"type="text" placeholder='Endereço'>
+            <input class="input input__cadastro" id="data" type="date">
+            <input class="input input__cadastro"id="dentista" type="text" placeholder='Dentista'>
+            <input class="input input__cadastro"id="observacao" type="text" placeholder='Observações'>
+        </div>
+        <button class="btn" id="btn__cadastrar">Cadastrar</button> 
+        <hr>
+        <button class="btn" id="btn__consultas">Consultas Agendadas </button> 
+    </div>
+    <div class="concluido">
+        <svg class="concluido__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 2048 2048"><path fill="currentColor" d="m1902 196l121 120L683 1657L25 999l121-121l537 537L1902 196z"/></svg>
+        <p class="concluido__frase">Login Realizado</p>
+    </div>
+    <div id="agendamentos">
+        <svg id="btn__fechar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6L6.4 19Z"/></svg>
+        <div id="resultado">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
