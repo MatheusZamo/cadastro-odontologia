@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction:column;
     align-items:center;
-    background-image: url('./img/images.jpeg');
+    background-image: url('./img/dentista.jpg');
 }
 .div{
     display: flex;
