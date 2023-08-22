@@ -49,8 +49,19 @@ btnCadastrar.addEventListener('click',() => {
 })
 
 const atualizaConsulta = (ID) => {
-    dados = dados.filter(dado => dado.id == ID);
-}
+    dados = dados.filter(dado => {
+        if(dado.id == ID){
+            nome.value = dado.nome;
+            telefone.value = dado.telefone;
+            endereco.value = dado.endereco;
+            data.value = dado.data;
+            dentista.value = dado.dentista;
+            observacao.value = dado.observacao;
+           agendamentos.style.display = 'none';
+        } 
+        dados
+    });
+  }
 
 const deletarConsulta = (ID) => {
     dados  = dados.filter(dado => dado.id !== ID);
@@ -95,12 +106,3 @@ btnConsultas.addEventListener('click',() => {
 btnFechar.addEventListener('click',() => {
     agendamentos.style.display = 'none';
 })
-
-const verificaLogin = () =>{
-    if(inputUsuario.lenght < 4){
-        console.log('teste.... senha menor que 4 digitos')
-    }
-}
-
-
-
