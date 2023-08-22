@@ -116,7 +116,6 @@ hr{
     color:#f1f1f1;
 }
 #resultado{
-    background: #87befe;
     width: 270px;
     text-align: center;
     margin-left: 15px;
@@ -131,7 +130,7 @@ hr{
 .dado{
     text-decoration: none;
     color:#000000;
-    font-size:20px;
+    ffont-size: 23px;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-family: 'Genos', sans-serif;
     font-weight: 500;
@@ -212,7 +211,7 @@ hr{
 }
 #agendamentos{
     width: 600px;
-    height: 500px;
+    height: 550px;
 }
 #btn__fechar{
     margin-left:550px;
