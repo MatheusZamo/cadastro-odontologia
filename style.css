@@ -148,33 +148,13 @@ hr{
     width: 240px;
 }
 
-.concluido{
-    display: none;
-    width: 200px;
-    height:22px;
-    background-color:#35ba0c;
-    margin-top:15px;
-    border-radius:20px;
-    animation: mover 1s alternate;
+#btnSair{
+    position:absolute;
+    color: #f1f1f1;
+    text-decoration:none;
+    margin-bottom:380px;
+    margin-left: 220px;
 }
-@keyframes mover{
-    from{
-        transform:translatex(295px);
-    }
-    to{
-        transform:translatex(0px);
-    }
-}
-.concluido__icon{
-    margin-left:15px;
-}
-.concluido__frase{
-    margin-top:2px;
-    margin-left:15px;
-    font-size:18px;
-    font-weight: bold;
-}
-
 
 @media (min-width:500px){
     .div{
